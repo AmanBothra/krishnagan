@@ -48,6 +48,25 @@
       text-decoration: none;
     }
 
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+    }
+    .social-icons svg {
+      width: 100%;
+      height: 100%;
+      fill: #ffd700;
+      transition: fill 0.3s;
+    }
+    .social-icons a:hover svg {
+      fill: #fff;
+    }
+
     @media (max-width: 600px) {
       .overlay {
         padding: 20px;
@@ -57,6 +76,11 @@
       }
       p {
         font-size: 1em;
+      }
+      .social-icons a {
+        width: 28px;
+        height: 28px;
+        margin: 0 8px;
       }
     }
   </style>
@@ -68,6 +92,22 @@
     <p>Tilak Nagar, Bikaner, Rajasthan</p>
     <p>Email: <a href="mailto:kgclub88@gmail.com">kgclub88@gmail.com</a></p>
     <p>Phone: <a href="tel:+919414137557">9414137557</a>, <a href="tel:+917300058216">7300058216</a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/krishnangan_kg/" target="_blank" aria-label="Instagram">
+        <!-- Instagram SVG icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5z"/>
+          <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/>
+          <circle cx="17.5" cy="6.5" r="1.5"/>
+        </svg>
+      </a>
+      <a href="https://wa.me/919414137557" target="_blank" aria-label="WhatsApp">
+        <!-- WhatsApp SVG icon -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.52 3.48A11.97 11.97 0 0 0 12 0C5.372 0 0 5.372 0 12c0 2.116.553 4.192 1.601 6.022L0 24l6.223-1.593A11.962 11.962 0 0 0 12 24c6.628 0 12-5.372 12-12 0-3.206-1.249-6.217-3.48-8.52zM12 22.5a10.45 10.45 0 0 1-5.305-1.486l-.38-.226-3.696.948.986-3.614-.247-.37A10.504 10.504 0 0 1 1.5 12c0-5.799 4.701-10.5 10.5-10.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5zm5.167-7.943c-.29-.145-1.715-.847-1.981-.944-.266-.098-.46-.145-.654.146-.194.29-.749.944-.918 1.137-.168.194-.335.217-.624.073-.29-.145-1.224-.45-2.33-1.439-.861-.767-1.442-1.713-1.613-2.002-.168-.29-.018-.446.127-.591.13-.13.29-.335.435-.503.145-.168.194-.29.29-.483.098-.194.049-.365-.024-.51-.073-.145-.654-1.574-.897-2.157-.236-.57-.478-.494-.654-.504l-.558-.01c-.19-.002-.5.073-.762.365s-1.001.98-1.001 2.387 1.025 2.766 1.167 2.96c.146.194 2.017 3.075 4.89 4.31.684.295 1.217.471 1.633.603.686.22 1.312.19 1.805.115.552-.085 1.715-.7 1.957-1.377.243-.677.243-1.258.17-1.377-.073-.12-.266-.194-.556-.338z"/>
+        </svg>
+      </a>
+    </div>
   </div>
 
   <script>
@@ -81,8 +121,7 @@
       'resort-images/r6.jpeg',
       'resort-images/r7.jpeg',
       'resort-images/r8.jpeg',
-      'resort-images/r9.jpeg',
-
+      'resort-images/r9.jpeg'
     ];
     let current = 0;
 
