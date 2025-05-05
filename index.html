@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resort Krishnangan - Coming Soon</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 1s ease-in-out;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 500px;
+      margin: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0 0 20px;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .overlay {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Resort Krishnangan</h1>
+    <p>Near Mahendra, Jaipur Road</p>
+    <p>Bikaner, Rajasthan</p>
+    <p>Email: <a href="mailto:kgclub88@gmail.com">kgclub88@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919414137557">9414137557</a>, <a href="tel:+917300058216">7300058216</a></p>
+  </div>
+
+  <script>
+    // Array of background images (add up to 9 images)
+    const images = [
+      'resort-images/r1.jpeg',
+      'resort-images/r2.jpeg',
+      'resort-images/r3.jpeg',
+      'resort-images/r4.jpeg',
+      'resort-images/r5.jpeg',
+      'resort-images/r6.jpeg',
+      'resort-images/r7.jpeg',
+      'resort-images/r8.jpeg',
+      'resort-images/r9.jpeg',
+
+    ];
+    let current = 0;
+
+    function changeBackground() {
+      document.body.style.backgroundImage = `url('${images[current]}')`;
+      current = (current + 1) % images.length;
+    }
+
+    // Initial background
+    changeBackground();
+    // Change every 5 seconds (adjust as needed)
+    setInterval(changeBackground, 5000);
+  </script>
+</body>
+</html>
